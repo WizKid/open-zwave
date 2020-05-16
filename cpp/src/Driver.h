@@ -52,13 +52,14 @@ namespace OpenZWave
 			class ApplicationStatus;
 			class Basic;
 			class CommandClass;
-			class WakeUp;
 			class ControllerReplication;
+			class EntryControl;
 			class ManufacturerSpecific;
 			class MultiChannelAssociation;
 			class NodeNaming;
 			class Security;
 			class SceneActivation;
+			class WakeUp;
 		}
 		namespace VC
 		{
@@ -93,6 +94,7 @@ namespace OpenZWave
 			friend class Internal::VC::Value;
 			friend class Internal::VC::ValueStore;
 			friend class Internal::CC::Basic;
+			friend class Internal::CC::EntryControl;
 			friend class Internal::CC::ManufacturerSpecific;
 			friend class Internal::CC::MultiChannelAssociation;
 			friend class Internal::CC::NodeNaming;

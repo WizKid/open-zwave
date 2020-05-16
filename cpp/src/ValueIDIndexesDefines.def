@@ -2169,6 +2169,17 @@ ENUM(ValueID_Index_EnergyProduction,
 		Today = 2,
 		Time = 3
 	);
+ENUM(ValueID_Index_EntryControl,
+		Keys = 0,
+		Data_Types = 1,
+		Event_Types = 2,
+		Key_Cached_Size = 3,
+		Key_Cached_Timeout = 4,
+		Key_Cached_Size_Minimum = 5,
+		Key_Cached_Size_Maximum = 6,
+		Key_Cached_Timeout_Minimum = 7,
+		Key_Cached_Timeout_Maximum = 8
+	);
 ENUM(ValueID_Index_Indicator,
 		Indicator = 0
 	);

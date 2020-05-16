@@ -117,7 +117,7 @@ string Notification::GetAsString() const
 			str = "DriverReady";
 			break;
 		case Type_DriverFailed:
-			str = "DriverFailed: " + m_comport;
+			str = "DriverFailed: " + m_string;
 			break;
 		case Type_DriverReset:
 			str = "DriverReset";
@@ -336,7 +336,9 @@ string Notification::GetAsString() const
 		case Type_ManufacturerSpecificDBReady:
 			str = "ManufacturerSpecificDB Ready";
 			break;
-
+		case Type_EntryControl:
+			str = "EntryControl - Sequence Number: "+to_string(m_byte)+", Event Type: "+to_string(m_event)+", Event Data: '"+m_string+"'";
+			break;
 	}
 	return str;
 

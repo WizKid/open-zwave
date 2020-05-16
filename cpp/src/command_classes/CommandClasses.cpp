@@ -48,6 +48,7 @@
 #include "command_classes/DoorLock.h"
 #include "command_classes/DoorLockLogging.h"
 #include "command_classes/EnergyProduction.h"
+#include "command_classes/EntryControl.h"
 #include "command_classes/Hail.h"
 #include "command_classes/Indicator.h"
 #include "command_classes/Language.h"
@@ -204,6 +205,7 @@ namespace OpenZWave
 				cc.Register(DoorLock::StaticGetCommandClassId(), DoorLock::StaticGetCommandClassName(), DoorLock::Create);
 				cc.Register(DoorLockLogging::StaticGetCommandClassId(), DoorLockLogging::StaticGetCommandClassName(), DoorLockLogging::Create);
 				cc.Register(EnergyProduction::StaticGetCommandClassId(), EnergyProduction::StaticGetCommandClassName(), EnergyProduction::Create);
+				cc.Register(EntryControl::StaticGetCommandClassId(), EntryControl::StaticGetCommandClassName(), EntryControl::Create);
 				cc.Register(Hail::StaticGetCommandClassId(), Hail::StaticGetCommandClassName(), Hail::Create);
 				cc.Register(Indicator::StaticGetCommandClassId(), Indicator::StaticGetCommandClassName(), Indicator::Create);
 				cc.Register(Language::StaticGetCommandClassId(), Language::StaticGetCommandClassName(), Language::Create);
